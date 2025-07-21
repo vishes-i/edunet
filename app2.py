@@ -4,8 +4,8 @@ import numpy as np
 import joblib 
 
 # Load model & encoder (adjust paths accordingly)
-model = joblib.load(r"C:\Users\adity\Downloads\fast_salary_model.pkl")
-encoders = joblib.load(r"C:\Users\adity\Downloads\fast_label_encoders.pkl")  # renamed for clarity
+model = joblib.load(r"fast_salary_model.pkl")
+encoders = joblib.load(r"fast_label_encoders.pkl")  # renamed for clarity
 
 # --- Page Setup ---
 st.set_page_config(page_title="💼 Salary Dashboard", layout="centered")
