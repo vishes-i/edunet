@@ -29,7 +29,7 @@ model = LinearRegression()
 model.fit(X, y)
 
 # Save model for reuse
-joblib.dump(model, r"C:\Users\adity\PycharmProjects\JupyterProject1\random_forest_regressor_salary_predictor_v1.pkl")
+joblib.dump(model, r"random_forest_regressor_salary_predictor_v1.pkl")
 
 # Streamlit UI
 st.title("Salary Prediction System")
@@ -50,7 +50,7 @@ for col in X.columns:
 input_encoded = input_encoded[X.columns]  # Order columns
 
 # Load model and predict
-model = joblib.load(r'C:\Users\adity\PycharmProjects\JupyterProject1\random_forest_regressor_salary_predictor_v1.pkl')
+model = joblib.load(r'random_forest_regressor_salary_predictor_v1.pkl')
 prediction = model.predict(input_encoded)[0]
 
 st.subheader("Predicted Salary")
