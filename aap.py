@@ -18,9 +18,9 @@ from sklearn.metrics import accuracy_score, mean_squared_error
 
 # ----------------- Constants ------------------
 MODEL_DIR = "models"
-MODEL_PATH = os.path.join(MODEL_DIR,r"C:\Users\adity\Downloads\fast_salary_model.pkl")
-ENCODER_PATH = os.path.join(MODEL_DIR, r"C:\Users\adity\Downloads\fast_label_encoders.pkl")
-CSV_PATH = r"C:\Users\adity\OneDrive\Apps\adult.csv"
+MODEL_PATH = os.path.join(MODEL_DIR,r"fast_salary_model.pkl")
+ENCODER_PATH = os.path.join(MODEL_DIR, r"fast_label_encoders.pkl")
+CSV_PATH = r"adult.csv"
 FEATURE_COLUMNS = [
     'age', 'education', 'occupation', 'hours-per-week', 'gender',
     'capital-gain', 'capital-loss', 'marital-status'
