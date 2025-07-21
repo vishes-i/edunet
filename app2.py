@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
+import joblib 
 
 # Load model & encoder (adjust paths accordingly)
 model = joblib.load(r"C:\Users\adity\Downloads\fast_salary_model.pkl")
