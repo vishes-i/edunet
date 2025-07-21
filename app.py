@@ -139,14 +139,14 @@ st.markdown("""
 
 # Load the trained model
 try:
-    model = joblib.load(r"C:\Users\adity\PycharmProjects\JupyterProject1\random_forest_regressor_salary_predictor_v1.pkl")
+    model = joblib.load(r"random_forest_regressor_salary_predictor_v1.pkl")
 except FileNotFoundError:
     st.error("Model file not found. Please train and save the model first.")
     st.stop()
 
 # Load the original training data to get column names and unique values for encoding
 try:
-    df_train = pd.read_csv(r"C:\Users\adity\OneDrive\Apps\adult.csv")  # Assuming the original data is available
+    df_train = pd.read_csv(r"adult.csv")  # Assuming the original data is available
     df_train.dropna(inplace=True)
     df_train.drop_duplicates(inplace=True)
     df_train.reset_index(inplace=True, drop=True)
